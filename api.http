@@ -1,5 +1,5 @@
 // greet function 
-POST http://localhost:4001/api/greet
+POST https://the-api-for-greeting.onrender.com/api/greet
 content-type: application/json
 
 {
@@ -7,14 +7,19 @@ content-type: application/json
 	"greeting" : "Molo"
 }
 
-POST http://localhost:4001/api/greet
+###
+
+POST https://the-api-for-greeting.onrender.com/api/greet
 content-type: application/json
 
 {
 	"language" : "zulu",
 	"greeting" : "Sawubona"
 }
-POST http://localhost:4001/api/greet
+
+###
+
+POST https://the-api-for-greeting.onrender.com/api/greet
 content-type: application/json
 
 {

@@ -34,13 +34,14 @@ app.post('/api/greet', function(req, res) {
  
 // add an entry to our greetings map 
 const language = req.body.language
-greetings [language] = req.body.greeting
-res.json ({
+greetings [language] = req.body.greeting;
+res.json (
+    {
     status: 'success',
-    message: 'Added a greeting for ${language}'
-});
+    message: `Added a greeting for ${language}`
+})
 
-});
+})
 
 //http://localhost:4001/api/greet/Sabelo
 app.get("/api/greet/:username",function(req,res){
